@@ -30,7 +30,7 @@ Risk assesment
 
 Architechture
 
-![pipe](/webapp/docs/CICD pipeline.png)
+![pipe](/webapp/docs/pipe.png)
 
 
 Unit tests are run using pyTest.
