@@ -21,12 +21,12 @@ Project management
 This project was tracked using GITHUB, tasks were written as user stories then translated onto a trello board using the MoSCoW 
 prioritisation method. Due to the short time frame to complete this project some features originally planned were not implemented.
 
-![trelloboard](/docs/trellostart.jpeg)
-![trelloboard](/docs/trello2.png)
+![trelloboard](/webapp/docs/trellostart.jpeg)
+![trelloboard](/webapp/docs/trello2.png)
 
 Risk assesment
 
-![risk](/docs/risk.png)
+![risk](/webapp/docs/risk.png)
 
 Architechture
 Continuous integration and deployment is implemented in this project using Jenkins as an automation server to provide an automated pipeline between source code and deployment.
@@ -42,17 +42,17 @@ Docker Compose builds an image with the application code and pushes two versions
 Jenking transfers the Docker Compose configuration file to the Docker Swarm manager node via scp, connects via ssh and triggers an update on the swarm.
 Docker Swarm will then pull the updated image from Docker Hub, stop the current running containers and create new containers with the updated image.
 
-![arch](/docs/arch.png)
+![arch](/webapp/docs/arch.png)
 
 Database relationship
 
-![db](/docs/database relationship1.png)
+![db](/webapp/docs/database relationship1.png)
 
 Unit testing
 
 I tested the backend of the application which includes 172 tests, using maven.
 
-![unit testing](/docs/unitt.png)
+![unit testing](/webapp/docs/unitt.png)
 
 Front End Testing
 Unfortunately after several attempts at automating the frontend testing via Jenkins it was found that doing so was not achievable in the given time frame for the project. In order to do so, Selenium scripts were required but this process would have required a large amount of learning towards the end of the project. This should be considered for future improvements.
