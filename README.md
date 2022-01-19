@@ -40,7 +40,7 @@ Docker Compose builds an image with the application code and pushes two versions
 
 Database relationship
 
-![db](/webapp/docs/database relationship1.png)
+![db](/webapp/docs/dbr.png)
 
 Unit testing
 
