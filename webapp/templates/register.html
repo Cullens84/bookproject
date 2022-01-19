@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>{% block title %}{% endblock %}</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    
+        {% block style %}{% endblock %}
+    
+        <style>
+            a.dark {
+                color: black;
+            }
+    
+        </style>
+    </head>
+<body>
+    <div class="w3-display-middle">
+
+        <div class="w3-container" style="opacity: 0.7;">
+    
+            <form class="w3-xlarge" action="/register" method="post">
+    
+                <input class="w3-input w3-border" type="text" name="uname" placeholder="username">
+                <input class="w3-input w3-border" type="password" name="pwd" placeholder="password">
+                <input class="w3-input w3-border" type="password" name="repwd" placeholder="repassword">
+    
+                <div class="w3-bar w3-small w3-orange w3-padding">
+                    <span class="w3-bar-item" style="width:67%"></span>
+    
+                    <button class="w3-bar-item w3-button w3-green" type="submit" style="width:33%">register</button>
+                  </div>
+    
+            </form>
+    
+    
+        </div>
+    
+    </div>
+</body>
+</html>

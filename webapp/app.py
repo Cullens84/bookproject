@@ -19,7 +19,7 @@ def add():
     return render_template('add.html')
 
 @app.route('/addBook', methods = ['POST', 'GET'])
-def addphone():
+def addBook():
     if request.method == 'POST' and request.form['save']:
         if db.insert(request.form):
             flash("A new Book has been added")
@@ -41,14 +41,14 @@ def update(id):
         return render_template('update.html', data = data)
 
 @app.route('/updateBook', methods = ['POST'])
-def updatephone():
+def updateBook():
     if request.method == 'POST' and request.form['update']:
 
         if db.update(session['update'], request.form):
             flash('A Book has been updated')
 
         else:
-            flash('A Bookcan not be updated')
+            flash('The Book can not be updated')
 
         session.pop('update', None)
 
@@ -67,14 +67,14 @@ def delete(id):
         return render_template('delete.html', data = data)
 
 @app.route('/deleteBook', methods = ['POST'])
-def deletephone():
+def deleteBook():
     if request.method == 'POST' and request.form['delete']:
 
         if db.delete(session['delete']):
-            flash('A Book has been deleted')
+            flash('The Book has been deleted')
 
         else:
-            flash('A Book can not be deleted')
+            flash('The Book can not be deleted')
 
         session.pop('delete', None)
 
