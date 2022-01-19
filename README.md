@@ -2,23 +2,23 @@
 QA DFECloud2
 
 Project Brief
-To create a web application that integrates with a database across two tables and demonstrates CRUD functionality.
-To utilise containers to host and deploy your application.
-To create a continuous integration (CI)/continuous deployment (CD) pipeline that will automatically test, build and deploy your application.
+To create a web application that integrates with a database across two tables and demonstrates CRUD functionality.-
+To utilise containers to host and deploy your application.-
+To create a continuous integration (CI)/continuous deployment (CD) pipeline that will automatically test, build and deploy your application.x
 
 Technologies:
 
-Python
-Pytest
-Flask
-Docker/Docker Compose
-MySQL
+Python-
+Pytest-
+Flask-
+Docker/Docker Compose-
+MySQL-
 
 The MVP for this project is a website that allows create read update delete functionality on a basic book logging page.
-This must include SQL, Python, HTML, Docker, FLask
+This must include SQL, Python, HTML, Docker, FLask.
 
 Project management
-This project was tracked using GITHUB, tasks were written as user stories then translated onto a trello board using the MoSCoW 
+This project was version controlled using GITHUB, tasks were written as user stories then translated onto a trello board using the MoSCoW 
 prioritisation method. Due to the short time frame to complete this project some features originally planned were not implemented.
 
 ![trelloboard](/webapp/docs/trellostart.jpeg)
@@ -29,18 +29,12 @@ Risk assesment
 ![risk](/webapp/docs/risk.png)
 
 Architechture
-Continuous integration and deployment is implemented in this project using Jenkins as an automation server to provide an automated pipeline between source code and deployment.
 
-When new code is pushed via VS Code to GitHub, it will send a webhook to Jenkins to trigger one of the three pipelines depending on which branch the code was pushed to: feature, dev or main.
+![pipe](/webapp/docs/CICD pipeline.png)
 
-The feature pipeline is the shortest, only running unit tests using pyTest and providing a coverage report.
 
-The dev and main pipelines are similar, with the difference being the server where the artefacts will be deployed: test or production. On these pipelines:
-
-Unit tests are run using pyTest and a coverage report is presented on Jenkins dashboard.
+Unit tests are run using pyTest.
 Docker Compose builds an image with the application code and pushes two versions to Docker Hub tagged as: numbered version and latest. In the event of a problem with the latest version being deployed, previous versions can be used to roll back the application to a working version.
-Jenking transfers the Docker Compose configuration file to the Docker Swarm manager node via scp, connects via ssh and triggers an update on the swarm.
-Docker Swarm will then pull the updated image from Docker Hub, stop the current running containers and create new containers with the updated image.
 
 ![arch](/webapp/docs/arch.png)
 
