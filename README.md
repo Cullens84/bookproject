@@ -39,9 +39,16 @@ prioritisation method. Due to the short time frame to complete this project some
 
 ![pipe](/webapp/docs/pipe.png)
 
+# The app
 
-# Unit tests are run using pyTest.
-Docker Compose builds an image with the application code and pushes two versions to Docker Hub tagged as: numbered version and latest. In the event of a problem with the latest version being deployed, previous versions can be used to roll back the application to a working version.
+![app1](/webbapp/docs/app1.png)
+
+![app1](/webbapp/docs/app2.png)
+
+![app1](/webbapp/docs/app3.png)
+
+![app1](/webbapp/docs/app4.png)
+
 
 ![arch](/webapp/docs/arch.png)
 
