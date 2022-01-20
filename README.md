@@ -51,7 +51,7 @@ Docker Compose builds an image with the application code and pushes two versions
 
 # Unit testing
 
-I tested the backend of the application which includes 172 tests, using maven.
+I tested the backend of the application which includes 172 tests, using pytest.
 
 ![unit testing](/webapp/docs/unitt.png)
 
