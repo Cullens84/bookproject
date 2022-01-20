@@ -8,11 +8,11 @@ To create a continuous integration (CI)/continuous deployment (CD) pipeline that
 
 Technologies:
 
-Python-
-Pytest-
-Flask-
-Docker/Docker Compose-
-MySQL-
+Python
+Pytest
+Flask
+Docker/Docker Compose
+MySQL
 
 The MVP for this project is a website that allows create read update delete functionality on a basic book logging page.
 This must include SQL, Python, HTML, Docker, FLask.
