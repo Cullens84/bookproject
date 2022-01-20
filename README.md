@@ -43,11 +43,11 @@ prioritisation method. Due to the short time frame to complete this project some
 
 ![app1](/webbapp/docs/app1.png)
 
-![app1](/webbapp/docs/app2.png)
+![app2](/webbapp/docs/app2.png)
 
-![app1](/webbapp/docs/app3.png)
+![app3](/webbapp/docs/app3.png)
 
-![app1](/webbapp/docs/app4.png)
+![app4](/webbapp/docs/app4.png)
 
 
 ![arch](/webapp/docs/arch.png)
