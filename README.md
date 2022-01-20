@@ -51,6 +51,11 @@ I tested the backend of the application which includes 172 tests, using maven.
 Front End Testing
 Unfortunately after several attempts at automating the frontend testing via Jenkins it was found that doing so was not achievable in the given time frame for the project. In order to do so, Selenium scripts were required but this process would have required a large amount of learning towards the end of the project. This should be considered for future improvements.
 
+
+ONE DRIVE LINK TO VIDEO
+https://onedrive.live.com/embed?cid=7DCBAD4451AB20BD&resid=7DCBAD4451AB20BD%2124968&authkey=AP4agZ1l9QMbisE
+
+
 END POINT
 by the end of the project I have met the MVP in having a CRUD app that is deployed using Docker.
 Timescales have led to Jenkins to not be completed.
