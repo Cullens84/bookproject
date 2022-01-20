@@ -35,7 +35,7 @@ prioritisation method. Due to the short time frame to complete this project some
 
 ![risk](/webapp/docs/risk.png)
 
-Architechture
+# Architechture
 
 ![pipe](/webapp/docs/pipe.png)
 
